@@ -7,3 +7,11 @@ export class HelloResolver {
         return "Hello there!"
     }
 }
+
+@Resolver()
+export class ByeResolver {
+    @Query(() => String)
+    bye() {
+        return "Bye there!"
+    }
+}
